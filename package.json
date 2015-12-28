@@ -1,0 +1,24 @@
+{
+  "name": "followme",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "latestw",
+    "ejs": "latest",
+    "socket.io": "latest",
+    "cookie-session": "latest",
+    "body-parser" :"latest"
+  },
+  "author": "Sanh LY <sanh.ly1@gmail.com>",
+  "description": "A simple NodeJS app allowing a smartphone user to broadcast his position to friends, using Google Apis. ",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "GPS",
+    "location",
+    "nodejs"
+  ],
+  "license": "ISC"
+}

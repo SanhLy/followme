@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Follow me</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+    <link rel="stylesheet" href="/css/followme.css"></link>
+  </head>
+  <body>
+  	<h1 class="username">&nbsp;Hello <%=username%></h1>
+    <div class="dashboard">
+      <div id="user">
+        <div id="map"></div>
+      </div>
+      <div id="chat">
+        <div id="chat-messages"></div>
+        <form id="stupid-form">
+          <input type="text" id="chat-input"></input>
+          <button id="send-chat">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+          baseUrl = '<%= baseAddress %>/';
+          myUsername = '<%=username%>';
+          room = "<%= room %>";
+    </script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="<%= baseAddress %>/js/followme.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHbvc2EtuqygmuN3ReV7SZ7KztEgcpY-4&signed_in=true&callback=initMap"
+        async defer>
+    </script>
+  </body>
+</html>
