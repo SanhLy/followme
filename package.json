@@ -6,7 +6,9 @@
     "ejs": "latest",
     "socket.io": "latest",
     "cookie-session": "latest",
-    "body-parser" :"latest"
+    "body-parser" :"latest",
+    "util":"latest"
+
   },
   "author": "Sanh LY <sanh.ly1@gmail.com>",
   "description": "A simple NodeJS app allowing a smartphone user to broadcast his position to friends, using Google Apis. ",
